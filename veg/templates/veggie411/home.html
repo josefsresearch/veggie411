@@ -1,0 +1,33 @@
+<div style="top:60%">
+ <div style="float:left;width:50%;">
+ <center>
+  <img src='{{STATIC_URL}}veggie411.png' style="background-repeat:no-repeat;">
+ </center>
+ </div>
+ <div stlye="float:right;width:50%;">
+  <center>
+   <p>
+    <br>
+    Veggie411 is your on-the-go, pocket-sized grocery helper! Use our app to find out if a food product meets your dietary needs by scanning the barcode, searching our extensive database, or getting useful nutrition tips from medical professionals!
+   </p>
+   <p>
+    We are currently working on the first version of the mobile app, please sign up below to stay up to date!
+   </p>
+   <p>
+    <form action="/submitemail/" method="post">
+     {% csrf_token %}
+     Email: <input type="text" name="email">
+     <br>
+     <br>
+     <input type="submit" value="Submit" style="background-color:#9cc13b;border:1px solid black;color:white;width:100px;height:25px;"/>
+    </form>
+   </p>
+  <center>
+ </div>
+</div>
+<div style="float:bottom;height:40%;">
+ <center>
+  <img src="{{STATIC_URL}}fresh.png" style="background-repeat:no-repeat"/> 
+</center>	
+</div>
+
